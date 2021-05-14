@@ -1,0 +1,113 @@
+body{
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width:200px;
+}
+.logbar{
+    display:flex;
+    justify-content:space-between;
+    /*align-items: center;*/
+    background-color: #e1a154;
+    padding: 8px 0px;
+}
+
+.space{
+    flex-shrink: 0;
+    padding-left:22%
+}
+
+.logbar_text{
+    display: none;
+}    
+.logbar_Menu{
+   display: flex;
+   list-style: none;
+   padding-right:10%; 
+}
+.logbar_Menu li{
+    padding:10px;
+   
+}
+.logbar_Menu li a{
+    color:white;
+}
+
+    
+
+.Menubar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:antiquewhite;
+    height: 100px;
+    list-style: none;
+    margin:0;
+    padding-left: 0;
+    
+    
+}
+.Menubar li{
+    margin:30px;
+}
+.Menubar li:hover{
+    background-color: chocolate;
+    border-radius: 10px;
+   
+}
+
+.Menubar li a{
+    display: inline-block;
+    padding:20px; 
+    font-size:1.5em;
+    color:black;
+    font-weight:bold;
+}
+.Menubar li a:hover{
+    color:white;
+}
+
+@media screen and (max-width: 768px) {
+    img{
+        width:70px;
+        padding-left: 20px;
+    }
+    .space{
+        display: none;
+    }
+    
+    .Menubar{
+        flex-direction: column;
+        justify-content: flex-start;
+        height:165px;
+        
+    }
+    .Menubar li{
+        margin:3px;
+        width:100%;
+        text-align: center;
+        background-color: antiquewhite;
+        
+    }
+    .Menubar li a{
+        padding:10px;
+        font-size:1em;
+        width:100%;
+        
+    }
+    .logbar_Menu{
+        padding-right:10%; 
+        padding-top:10px;
+     }
+    .logbar_text{
+        display: inline;
+        width:150px;
+        height:50px;
+        padding-top:10px;
+        padding-left:0;
+
+
+}
